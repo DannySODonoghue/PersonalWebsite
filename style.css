@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(83, 25, 25, 0.1), rgba(102, 191, 39, 0.2)), url(images/gambino.jpg);
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    padding: 2% 4%;
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 1px 10px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(21, 19, 19);
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(93, 80, 80);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 80%;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 60px;
+}
+.text-box p{
+    font-size: 25px;
+    margin: 10px 0 40px;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    color: rgb(92, 11, 11);
+    background: #fff;
+    transition: 0.5s;
+}
+.sub-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/ghost.jpg);
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+    color:rgb(236, 217, 217);
+}
+.sub-nav-links{
+    padding: 2% 4%;
+    flex: 1;
+    text-align: right;
+}
+.sub-nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 1px 10px;
+    position: relative;
+}
+.sub-nav-links ul li a{
+    color: rgb(236, 217, 217);
+    text-decoration: none;
+    font-size: 13px;
+}
+.sub-nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(236, 217, 217);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.sub-nav-links ul li:hover::after{
+    width: 100%;
+}
+.sub-text-box{
+    width: 80%;
+    position: absolute;
+    color: rgb(236, 217, 217);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+    text-align: center;
+}
+.sub-text-box h1{
+    font-size: 60px;
+}
+.sub-text-box p{
+    transform: translateY(100%);
+    font-size: 15px;
+    margin: 10px 0 40px;
+}
+.sub-header img{
+    width: 7%;
+    transform: translate(-620px, -30px);
+}
+.sub-header h2{
+    width: 100%;
+    transform: translate(-500px, -100px);
+}
+.spotify-header{
+    text-align: left;
+    padding: 20px 100px;
+}
+.spotify-box{
+    width: 300px;
+    height: 400px;
+    padding: 10px 100px;
+}
+.presentation{
+    padding: 10px 100px;
+    transform: translate(300px, -450px);
+}
